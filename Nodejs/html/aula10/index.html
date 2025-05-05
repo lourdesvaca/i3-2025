@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATIONS</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+<style>
+    .div1 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: example;
+        animation-duration: 4s;
+    }
+    @keyframes example {
+0%  {background-color: red; left: 0px; top: 0px;}
+25%  {background-color: yellow; left: 200px; top: 0px;}
+50%  {background-color: blue; left: 200px; top: 200px;}
+75%  {background-color: green; left: 0px; top: 200px;}
+100%  {background-color: red; left: 0px; top: 0px;}
+
+    }
+
+    .div2{
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        animation-name: example2;
+        animation-duration: 6s;
+    }
+    @keyframes example2 {
+        from {background-color: black;}
+        to {background-color: aquamarine;}
+    }
+
+    .div3{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        animation-name: example3;
+        animation-duration: 2ms;
+    }
+
+    .div3:hover{
+        width: 500px;
+    }
+    @keyframes example3 {
+        
+    }
+
+    .div4{
+        width: 100px;
+        height: 100px;
+        background: purple;
+        transition: width 2s, background-color 2s, transform 2s; 
+    }
+
+    .div4:hover{
+        width: 300px;
+        background-color: orange;
+        transform: rotate(360deg); 
+    }
+</style>
+    <h2>Animations</h2>
+    <div class="div1"></div>
+    <br>
+    <div class="div2"></div>
+    <br>
+    <h2>transitions</h2>
+    <div class="div3"></div>
+    <br>
+    <div class="div4"></div>
+</head>
+<body>
+    
+</body>
+</html>

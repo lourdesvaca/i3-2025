@@ -1,0 +1,18 @@
+$cor-principal: orange;
+$primary-color: #333;
+$secondary-color: #777;
+
+h1{
+    color: $cor-principal;
+}
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    @include flex-center;
+    background-color: $primary-color;
+    color: $secondary-color;
+  }

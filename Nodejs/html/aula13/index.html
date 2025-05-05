@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo DOM</title>
+
+</head>
+<body>
+    <H2>Ola mundo</H2>
+    <p>Teste de Aplicacao DOM</p>
+    <div id="mudarnome">Clique Aqui para mudar nome</div>
+    <br>
+    <div id="mudarCorVermelho">Clique aqui cor vermelho</div>
+    <br>
+    <div id="mudarCorAmarelo">Clique Aqui cor amarelo</div>
+    <br>
+    <div id="mudarCorAzuis">Clique Aqui cor azuis</div>
+    <br>
+    <div id="nome">Lourdes</div>
+
+    <button type="submit">Listo</button>
+    <br>
+    <div id="duploclique">Clique aqui duplo clique</div>
+    <div id="mouseover">Clique aqui mouseover</div>
+    <div id="mouseout">Clique aqui mouseout</div>
+
+    <script>
+       
+        let elemento = document.getElementById('nome');
+        let elementoClass = document.getElementsByClassName('nomeclass');
+        let elementoHtml = document.getElementsByTagName('p');
+    
+        document.getElementById('mudarCorVermelho').addEventListener('click', function(){
+            document.getElementById('nome').style.color = "RED";
+        })
+        document.getElementById('mudarCorAmarelo').addEventListener('click', function(){
+            document.getElementById('nome').style.color = "yellow";
+        })
+        document.getElementById('mudarCorAzuis').addEventListener('click', function(){
+            document.getElementById('nome').style.color = "blue";
+        })
+        document.getElementById('mudarnome').addEventListener('click', function(){
+            alert('Clicou')
+        })
+        document.getElementById('nome').style.fontSize = "100px";
+
+
+        //otros eventos del addEventListener
+        document.getElementById("duploclique").addEventListener('dblclick', function(){
+            alert("duplo clique")
+        })
+
+        document-getElementById("mouseover").addEventListener('dblclick', function(){
+            alert("mouse over")
+        })
+
+        document-getElementById("mouseout").addEventListener('dblclick', function(){
+            alert("mouse out")
+        })
+    </script>
+
+</body>
+</html>

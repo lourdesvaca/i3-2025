@@ -1,0 +1,18 @@
+:root{
+    --cor-principal: blue;
+    --cord-secundaria: green;
+    --accent-color: #006; 
+}
+
+h1{
+    color: var(--cor-principal);
+}
+h2{
+    color: var(--cord-secundaria);
+}
+
+.element {
+    background-color: var(--main-color);
+    color: white;
+    border: 1px solid var(--accent-color);
+  }
